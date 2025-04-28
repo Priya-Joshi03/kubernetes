@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod 
+metadata: 
+  name: abc
+spec: 
+  containers:
+    - name: kube1
+      image: vimal13/apache-webserver-php
+    - name: kube2
+      image: vimal13/apache-webserver-php

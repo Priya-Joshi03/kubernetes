@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: jobhi
+spec:
+  containers:
+  - name: contain
+    image: centos:7
+  - name: contain1
+    image: ubuntu:14.0.4

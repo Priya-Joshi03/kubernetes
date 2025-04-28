@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: replica1
+spec: 
+  selector:
+    matchLabels: 
+      app: frontend
+      region: in
+      team: hardwork_noalsi
+  replicas: 5
+  template: 
+    metadata:
+      name: pod6
+      labels: 
+        app: frontend
+        region: in
+        team: hardwork_noalsi
+    spec: 
+      containers: 
+      - name: c1
+        image: vimal13/apache-webserver-php
